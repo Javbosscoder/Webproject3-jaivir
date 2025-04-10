@@ -1,0 +1,58 @@
+/* Set background color and margin for the entire page */
+body {
+    background-color: #f5e6cc; /* Light beige background for a warm tone */
+    margin: 15px; /* Adds space around the page */
+}
+
+/* Center align the main heading */
+h1 {
+    text-align: center;
+}
+
+/* Navbar styling */
+.navbar ul {
+    background-color: rgb(0, 0, 0);/* Black background for the navbar */
+    list-style-type: none; /* Removes bullet points from list items */
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden; /* Ensures proper spacing and alignment */
+}
+
+/* Navbar links */
+.navbar a {
+    text-decoration: none; /* Removes underline from links */
+    padding: 15px;
+    display: block; /* Makes the entire area clickable */
+    text-align: center;
+}
+
+/* Navbar hover effect */
+.navbar a:hover {
+    background-color: rgb(61, 61, 61); /* Darker gray color when hovering */
+}
+
+/* Navbar list items */
+.navbar li {
+    float: left; /* Aligns menu to the left */
+}
+
+/* Center align all paragraph text */
+p {
+    text-align: center;
+}
+
+/* Center content inside div elements */
+div {
+    display: grid;
+    place-items: center; 
+}
+
+/* makes the font size with the suppersigmaid to be bigger */
+#supersigmaid {
+    font-size: 24px; /* Makes the text larger */
+}
+
+/* Add a shadow effect to all images */
+img {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
