@@ -16,7 +16,7 @@ h1 {
 
 /* Navbar styling */
 .navbar ul {
-    background-color: rgb(0, 0, 0);/* Black background for the navbar */
+    background-color: #800000 ;/* Black background for the navbar */
     list-style-type: none; /* Removes bullet points from list items */
     padding: 0px;
     margin: 0px;
@@ -33,7 +33,7 @@ h1 {
 
 /* Navbar hover effect */
 .navbar a:hover {
-    background-color: rgb(61, 61, 61); /* Darker gray color when hovering */
+    background-color: rgb(85, 36, 36); /* Darker gray color when hovering */
 }
 
 /* Navbar list items */
