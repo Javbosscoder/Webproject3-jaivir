@@ -40,6 +40,18 @@ h1 {
 .navbar li {
     float: left; /* Aligns menu to the left */
 }
+/* Style for the refresh icon */
+.refresh-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer; /* Shows a pointer cursor when hovered */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+  /* Enlarge the icon slightly when hovered */
+.refresh-icon:hover {
+    transform: scale(1.2);
+}
 
 /* Center align all paragraph text */
 p {
