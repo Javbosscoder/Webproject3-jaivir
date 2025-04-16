@@ -53,6 +53,12 @@ h1 {
     transform: scale(1.2);
 }
 
+figcaption {
+    display: flex;
+    justify-content: center;
+
+
+}
 /* Center align all paragraph text */
 p {
     text-align: center;
@@ -64,6 +70,7 @@ div {
     place-items: center; 
 }
 
+
 /* makes the font size with the suppersigmaid to be bigger */
 #supersigmaid {
     font-size: 24px; /* Makes the text larger */
@@ -71,5 +78,6 @@ div {
 
 /* Add a shadow effect to all images */
 img {
+    float: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
 }
