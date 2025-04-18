@@ -37,7 +37,10 @@ html {
     float: left; /* Aligns menu to the left */
 }
 
-
+p {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+}
 
 /* Add a shadow effect to all images */
 img {
@@ -46,7 +49,13 @@ img {
 
 h1 {
     text-align: center;
+
 }
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 article {
     display: flex;
     align-items: flex-start; /* Aligns items at the top */
