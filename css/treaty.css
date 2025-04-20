@@ -4,9 +4,9 @@ body {
     margin: 15px; /* Adds space around the page */
 }
 html {
-    scroll-padding: 160px;
+    scroll-padding: 160px; 
     font-size: 62.5;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* makes the scroll of when it takes you to a section smoother */
 }
 
 
@@ -48,11 +48,11 @@ img {
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /* make the first header float to the middle */
 
 }
 h2 {
-    font-size: 24px;
+    font-size: 24px; /* make font size 24 px of the 2nd biggest heading  */
     font-weight: bold;
 }
 
@@ -74,3 +74,11 @@ article {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+/* Add a shadow effect to all images */
+img {
+    float: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+

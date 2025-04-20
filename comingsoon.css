@@ -29,62 +29,71 @@ h1 {
     font-size: 64px;
     text-align: center;
 }
-
+/* makes font size 64 px and make the text go to center  */
 div {
     font-size: 32px;
     text-align: center;
 }
+/* make whats in the divs font size 32px and align to the center  */
 
-img {
-    float: center;
-}
-
-*,
-*::before
+/* Apply box-sizing to all elements and specific parts of an element. */
+*, 
+*::before, 
 *::after {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* This makes padding and border stay inside the set width and height */
 }
 
+/* Remove default margin from all elements */
 * {
     margin: 0;
+    /* Gets rid of the browser’s default space around elements */
 }
 
+/* Container that holds all the scrolling items */
 .wrapper {
-    width: 90%;
-    max-width: 1536px;
-    margin-inline: auto;
-    position: relative;
-    height: 100px;
-    margin-top: 5rem;
-    overflow: hidden;
+    width: 90%; /* Take up 90% of the screen width */
+    max-width: 1536px; /* Set a maximum width so it doesn’t get too wide on big screens */
+    margin-inline: auto; /* Center it horizontle */
+    position: relative; /* So we can absolutely position children inside */
+    height: 100px; /* Height of the wrapper */
+    margin-top: 5rem; /* Add space above the wrapper */
+    overflow: hidden; /* Hides anything that goes outside the wrapper */
+    
+    /* Add a fade-in/out effect on left and right edges */
     mask-image: linear-gradient(
         to right,
-        rgba(0,0,0,0),
-        rgba(0,0,0,1) 20%,
-        rgba(0,0,0,1) 80%,
-        rgba(0,0,0,0)
+        rgba(0,0,0,0),   /* Fully transparent on the far left */
+        rgba(0,0,0,1) 20%, /* Fully visible at 20% in */
+        rgba(0,0,0,1) 80%, /* Still fully visible at 80% */
+        rgba(0,0,0,0)    /* Transparent again at far right */
     );
 }
 
+/* Keyframes for animation that moves items to the left */
 @keyframes scrollleft {
     to {
-        left: -200px;
+        left: -200px; /* Move to the left by 200px */
     }
 }
 
+/* Style for each moving item like the blocks */
 .item {
     width: 200px;
     height: 100px;
-    background-color: rgb(85, 36, 36);
-    border-radius: 6px;
-    position: absolute;
-    left: max(calc(200px * 8), 100%);
+    background-color: rgb(85, 36, 36); /* Dark maroon-ish red */
+    border-radius: 6px; /* Rounded corners */
+    position: absolute; /* So we can control exact position */
+    left: max(calc(200px * 8), 100%); /* Start from far at the right */
+    
+    /* Animation settings */
     animation-name: scrollleft;
     animation-duration: 30s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; /* Keep looping forever */
 }
 
+/* These classes give each item a different delay so they don’t all scroll at once */
 .item1 {
     animation-delay: calc(30s / 8 * (8 - 1) * -1);
 }
@@ -116,8 +125,3 @@ img {
 .item8 {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
-
-
-
-
-
